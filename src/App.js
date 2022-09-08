@@ -19,7 +19,7 @@ import useInterval from './useInterval'
 
 const mapName = "Mapa1";
 const indexName = "Prueba"
-const trackerName = "explore.tracker" 
+const trackerName = "Tracker2" 
 const deviceID = "Celular"
 
 Amplify.configure(awsconfig);
