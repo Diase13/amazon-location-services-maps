@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-maps-dev-102544-authRole",
+      "UnauthRoleArn": "arn:aws:iam::471695361605:role/amplify-maps-dev-102544-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::471695361605:role/amplify-maps-dev-102544-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-maps-dev-102544-deployment",
+      "UnauthRoleName": "amplify-maps-dev-102544-unauthRole",
+      "StackName": "amplify-maps-dev-102544",
+      "StackId": "arn:aws:cloudformation:us-east-1:471695361605:stack/amplify-maps-dev-102544/2eece5d0-2df8-11ed-9e04-12f38830ada9",
+      "AmplifyAppId": "dn27n3voarcz7"
+    },
+    "categories": {
+      "auth": {
+        "maps673cbaca": {}
+      }
+    }
+  }
+}
