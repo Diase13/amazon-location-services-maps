@@ -84,7 +84,7 @@ function Track(props){
     <div className="container">
       <div className="input-group">
         <div className="input-group-append">
-          <button onClick={ handleClick } className="btn btn-primary" type="submit">Track</button>
+          <button onClick={ handleClick } className="btn btn-primary" type="submit">Trackear</button>
         </div>
       </div>
     </div>
