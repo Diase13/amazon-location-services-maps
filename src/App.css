@@ -24,6 +24,27 @@
   color: white;
 }
 
+.sidebar {
+  background-color: rgba(35, 55, 75, 0.9);
+  color: #fff;
+  padding: 6px 12px;
+  font-family: monospace;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  margin: 12px;
+  border-radius: 4px;
+}
+
+.cards{
+  width: 10%;
+  position: absolute;
+  top: 0;
+  left: 88%;
+  margin: 12px;
+}
+
 .App-link {
   color: #61dafb;
 }

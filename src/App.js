@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
+import ListGroup from 'react-bootstrap/ListGroup';
+import Navbar from 'react-bootstrap/Navbar';
+import awslogo from './awslogo.svg';
+import camion from './camion.svg';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 import ReactMapGL, { Marker,
@@ -19,7 +26,7 @@ import useInterval from './useInterval'
 
 const mapName = "Mapa1";
 const indexName = "Prueba"
-const trackerName = "Tracker3" 
+const trackerName = "Tracker2" 
 const deviceID = "Celular"
 
 Amplify.configure(awsconfig);
@@ -81,12 +88,29 @@ function Track(props){
   }
 
   return (
+    <div>
+      <Navbar bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand href="#home">
+            <img
+              alt=""
+              src={awslogo}
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{' '}
+            AWS IoT - Rastreador
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
     <div className="container">
       <div className="input-group">
         <div className="input-group-append">
+          <br></br>
           <button onClick={ handleClick } className="btn btn-primary" type="submit">Trackear</button>
         </div>
       </div>
+    </div>
     </div>
   )
 }
@@ -219,6 +243,22 @@ const App = () => {
             mapStyle={mapName}
             onViewportChange={setViewport}
           >
+          <div className="sidebar">
+            Longitude: {marker.longitude} | Latitude: {marker.latitude} | Zoom: {30}
+          </div>
+          <Card className="cards">
+            <Card.Img variant="top" src={camion} width="100" height="100"/>
+            <Card.Body>
+              <Card.Title>Camion: Celular</Card.Title>
+              <Card.Text>
+                Detalles
+              </Card.Text>
+            </Card.Body>
+            <ListGroup className="list-group-flush">
+              <ListGroup.Item>Tiempo de espera: 1 hora</ListGroup.Item>
+              <ListGroup.Item>Velocidad del camion: 20km/h</ListGroup.Item>
+            </ListGroup>
+          </Card>
           <Marker
             longitude={marker.longitude}
             latitude={marker.latitude}
