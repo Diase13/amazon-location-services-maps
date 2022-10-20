@@ -5,6 +5,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Navbar from 'react-bootstrap/Navbar';
 import awslogo from './awslogo.svg';
 import camion from './camion.svg';
+import awslogofinal from './awslogofinal.png';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -94,7 +95,7 @@ function Track(props){
           <Navbar.Brand href="#home">
             <img
               alt=""
-              src={awslogo}
+              src={awslogofinal}
               width="30"
               height="30"
               className="d-inline-block align-top"
@@ -229,7 +230,6 @@ const App = () => {
 
   return (
     <div className="App">
-      <br/>
       <div>
         <Track trackDevice = {getDevicePosition}/>
       </div>
