@@ -120,16 +120,16 @@ const App = () => {
   const [credentials, setCredentials] = useState(null);
 
   const [viewport, setViewport] = useState({
-    longitude: -123.1187,
-    latitude: 49.2819,
-    zoom: 10,
+    longitude: -76.9969,
+    latitude: -12.0869,
+    zoom: 13,
   });
 
   const [client, setClient] = useState(null);
 
   const [marker, setMarker] = useState({
-    longitude: -123.1187,
-    latitude: 49.2819,
+    longitude: -76.9969,
+    latitude: -12.0869,
   });
 
   const [devPosMarkers, setDevPosMarkers] = useState([]); 
