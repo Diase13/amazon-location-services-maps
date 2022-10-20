@@ -121,16 +121,16 @@ const App = () => {
   const [credentials, setCredentials] = useState(null);
 
   const [viewport, setViewport] = useState({
-    longitude: -76.9969,
-    latitude: -12.0869,
+    longitude: -76.984034,
+    latitude: -12.085065,
     zoom: 13,
   });
 
   const [client, setClient] = useState(null);
 
   const [marker, setMarker] = useState({
-    longitude: -76.9969,
-    latitude: -12.0869,
+    longitude: -76.984034,
+    latitude: -12.085065,
   });
 
   const [devPosMarkers, setDevPosMarkers] = useState([]); 
@@ -174,7 +174,7 @@ const App = () => {
         setViewport({
           longitude: coordinates[0],
           latitude: coordinates[1], 
-          zoom: 10});
+          zoom: 13});
 
         setMarker({
           longitude: coordinates[0],
@@ -216,7 +216,7 @@ const App = () => {
         setViewport({
           longitude: tempPosMarkers[pos].long,
           latitude: tempPosMarkers[pos].lat, 
-          zoom: 5});
+          zoom: 13});
       }
     });
   }
@@ -244,7 +244,7 @@ const App = () => {
             onViewportChange={setViewport}
           >
           <div className="sidebar">
-            Longitude: {marker.longitude} | Latitude: {marker.latitude} | Zoom: {30}
+            Longitude: {marker.longitude} | Latitude: {marker.latitude} | Zoom: {13}
           </div>
           <Card className="cards">
             <Card.Img variant="top" src={camion} width="100" height="100"/>
